@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://israahitana.github.io/portfolio',
+  basePath: 'https://israahitana.github.io/portfoliop',
   supportedLocales: {
   "en-US": ""
 },
