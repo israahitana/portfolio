@@ -1,0 +1,157 @@
+.title {
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      color: #333; /* Dark gray */
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 2px 0;
+      padding: 5px;
+
+    }
+
+
+.form-container {
+  width: 500px;
+  background: linear-gradient(#0c0c0c, #111111) padding-box,
+               linear-gradient(-45deg, #d66797 0%, #830a40 100%)border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  margin-left: 35%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-width: 3px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-container .form-group input {
+  width: 90%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #830a40;
+}
+
+.form-container .form-group textarea {
+  width: 90%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #830a40;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color:  #830a40;
+    border-width: 2px;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #830a40 ;
+  border-width: 2px;
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: #830a40;
+  --btn-bg-2: #830a40;
+  --btn-bg-color: hsla(360 100% 100% / 1);
+
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    -45deg,
+    var(--btn-bg-1) 0%,
+    var(--btn-bg-2) 100%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(214, 103, 151, 0.5),
+    0px 5px 5px -1px rgba(131, 10, 64, 0.25),
+    inset 4px 4px 8px rgba(214, 103, 151, 0.3),
+    inset -4px -4px 8px rgba(131, 10, 64, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}

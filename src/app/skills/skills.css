@@ -1,0 +1,67 @@
+.title {
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      color: #333; /* Dark gray */
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 2px 0;
+      padding: 5px;
+
+    }
+
+
+
+.skill-card {
+    background: #0f0f0f;
+    width: 19%;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    border: 2px solid transparent;
+    transition: all 0.25s ease;   /* animation smooth */
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: scale(1.07);              /* ✔️ deviens plus grande */
+    border-color: #830a40;            /* ✔️ bordure affichée */
+    box-shadow: 0 0 70px  #830a40;       /* optionnel : glow */
+    border-width: 3px;
+  }
+
+.skill-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #263043;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background:  #830a40; /* couleur demandée */
+    border-radius: 10px;
+}
+
+.percent {
+    color: white;
+    font-size: 14px;
+}
